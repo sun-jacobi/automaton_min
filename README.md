@@ -1,0 +1,5 @@
+### minimize the automaton
+
+```
+
+```
