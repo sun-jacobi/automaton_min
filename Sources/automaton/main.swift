@@ -12,7 +12,7 @@ print("size of alphabet : ")
 let size_of_alpha = Int(readLine(strippingNewline: true)!)!
 
 
-print("input the accept states (splitted by whitespace)")
+print("input the accept states (split by whitespace)")
 
 let accept_states = readLine()!.components(separatedBy: " ").map{ (a: String)->(Int) in
     return Int(a)!
@@ -40,10 +40,10 @@ for i in 0..<num_of_state {
 
 while(true) {
     var cnt = 0
-    var used_str = [String : Int]()
-    var str = ""
+    var used_str = [String : Int]()   
     var next_states : [Character] = Array(repeating: "A", count: num_of_state)
     for (state, to) in table.enumerated() {
+        var str = ""
         for next_state in to {
             str.append(states[next_state])
         }
@@ -55,6 +55,7 @@ while(true) {
             cnt += 1
         } 
     }
+    print(states)
     if states.elementsEqual(next_states) {
         print("answer is: ")
         print(String(next_states))
