@@ -7,7 +7,7 @@ number of states:
 4
 size of alphabet :
 2
-input the accept states (splitted by whitespace)
+input the accept states (split by whitespace)
 0 2
 input the automaton
 0 1
